@@ -13,3 +13,9 @@ This is the start of my personal website to document my career, interests, proje
 A personal portfolio website built with Next.js, and Tailwind CSS.
 
 Just checking this template out. Cloned from https://github.com/wendoj/portfolio.git.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2024 Alex Stout. All rights reserved.
