@@ -1,0 +1,16 @@
+/* Change all text and icon colors in the player. */
+.vjs-alexhacks.video-js {
+  color: #C58240 !important;
+}
+
+/* Change the border of the big play button. */
+.vjs-alexhacks .vjs-big-play-button {
+  border-color: #C58240 !important;
+}
+
+/* Change the color of various "bars". */
+.vjs-alexhacks .vjs-volume-level,
+.vjs-alexhacks .vjs-play-progress,
+.vjs-alexhacks .vjs-slider-bar {
+  background: #C58240 !important;
+}

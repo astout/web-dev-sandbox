@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+
+#index-nav {
+  /*   background-color:blue; */
+  /* padding-top: 1%; */
+  transform: translateZ(0);
+  float: left;
+}
+
+/* ul.tabs {
+  padding: 0;
+} */
+
+/* #tab1,
+#tab2,
+#tab3,
+#tab4 {
+  padding-top: 10%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+} */
+
+.index-nav-tab {
+  display: inline-block;
+  position: relative;
+  background: rgba(23, 23, 30, 0.85);
+  font-family: Quicksand;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  cursor: pointer;
+  z-index: 0;
+  /*   transition: background-color 0.2s ease; */
+}
+
+.index-nav-tab a {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* hover effect */
+
+.index-nav-tab:before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(214, 193, 7, 0.829);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.2s ease-out;
+}
+
+#index-nav-tab-0:before {
+  background: url('/static/images/nav-bg-0.gif') no-repeat;
+
+  /* opacity: 0.70; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-background-position: right 50%;
+  -moz-background-position: right 50%;
+  -o-background-position: right 50%;
+  background-position: right 50%;
+}
+
+#index-nav-tab-1:before {
+  background: url('/static/images/nav-bg-1.gif') no-repeat;
+
+  /* opacity: 0.70; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-background-position: 50% top;
+  -moz-background-position: 50% top;
+  -o-background-position: 50% top;
+  background-position: 50% top;
+}
+
+#index-nav-tab-2:before {
+  background: url('/static/images/nav-bg-2.gif') no-repeat;
+
+  /* opacity: 0.70; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-background-position: 75% top;
+  -moz-background-position: 75% top;
+  -o-background-position: 75% top;
+  background-position: 75% top;
+}
+
+.index-nav-tab:hover:before {
+  transform: scaleX(1);
+}
